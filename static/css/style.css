@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300&display=swap');
+
+body {
+    background-color: #0A192F;
+    font-family: 'M PLUS Code Latin', sans-serif;
+}
+
+* {
+    color: #8892B0;
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+/* The animation code */
+@keyframes showshadow {
+    from {
+        box-shadow: none;
+    }
+
+    to {
+        box-shadow: 4px 2px #64FFDA;
+    }
+}
+
+.navbar-brand img:hover {
+    animation: showshadow;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+}
+
+.btn {
+    color: #64FFDA !important;
+    border: 2px solid #64FFDA;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.nav-link {
+    color: #8892B0;
+}
+
+.nav-link span {
+    color: #64FFDA;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 63px;
+    }
+}
+
+.about-div {
+    padding: 150px;
+    height: 90vh;
+}
+
+.about-div .short-intro {
+    font-size: 90px;
+}
+
+.about-div .intro {
+    width: 50%;
+}
+
+.about-div .greeting {
+    color: #64FFDA;
+}
+
+.about-div .names {
+    color: white;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.social-column ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.social-column ul li a {
+    display: block;
+    font-size: 20px;
+}
+
+.social-column ul,
+.email-column ul {
+    position: fixed;
+    bottom: 0px;
+}
+
+.vl {
+    border-left: 3px solid #8892B0;
+    height: 20vh;
+    margin-left: 6px;
+}
+
+.email-column ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.email-column ul li a {
+    display: block;
+    color: #8892B0;
+    writing-mode: vertical-rl;
+    text-decoration: none;
+}
+
+.about-me-full{
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.section-header {
+    color: white;
+    font-size: 35px;
+    position: relative;
+    font-size: 30px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.section-header span {
+    color: #64FFDA;
+}
+
+.section-header::after {
+    position: absolute;
+    margin-left: 15px;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: #8892B0;
+
+}
+
+.about-me-photo {
+    width: 250px;
+    border-radius: 15px;
+}
+
+.photo-frame {
+    height: 250px;
+    width: 250px;
+    border: 2px solid #64FFDA;
+    position: relative;
+    top: -238px;
+    right: -13px;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.skills-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+.skills-list li {
+    list-style-image: url('../img/fast-forward-double-right.png');
+}
+
+.where-have-worked {
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 200px;
+}
+
+.where-have-worked .section-header::after {
+    position: absolute;
+    margin-left: 15px;
+    top: 51%;
+    overflow: hidden;
+    width: 30%;
+    height: 1px;
+    content: '\a0';
+    background-color: #8892B0;
+
+}
+.bottom-copyright, .bottom-copyright *{
+    color: #64FFDA;
+    text-decoration: none;
+}

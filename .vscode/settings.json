@@ -1,0 +1,11 @@
+{
+    "html.format.templating": false,
+    "django.snippets.exclude": [
+
+        "cms",
+        "wagtail"
+    ],
+    "emmet.includeLanguages": {
+        "django-html": "html",
+   }
+}
