@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 body {
     background-color: #0A192F;
     font-family: 'M PLUS Code Latin', sans-serif;
@@ -108,7 +108,7 @@ body {
     text-decoration: none;
 }
 
-.about-me-full{
+.about-me-full, .projects-div {
     padding-left: 300px;
     padding-right: 300px;
 }
@@ -159,9 +159,17 @@ body {
     -webkit-columns: 2;
     -moz-columns: 2;
 }
+
 .skills-list li {
     list-style-image: url('../img/fast-forward-double-right.png');
 }
+
+.bottom-copyright,
+.bottom-copyright * {
+    color: #64FFDA;
+    text-decoration: none;
+}
+
 
 .where-have-worked {
     padding-left: 300px;
@@ -180,7 +188,70 @@ body {
     background-color: #8892B0;
 
 }
-.bottom-copyright, .bottom-copyright *{
-    color: #64FFDA;
+
+
+span.where-i-worked-title {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+a.inline-link {
+    display: inline-block;
+    /* position: relative; */
+    color: #64ffda !important;
+    font-size: 20px;
+    font-weight: 600;
     text-decoration: none;
+}
+a.inline-link:hover{
+    color: #64ffda;
+}
+
+#myTabWherIWorked {
+    border-left: 2px solid #8892B0;
+    border-bottom: none;
+}
+#myTabWherIWorked.nav-tabs .nav-item.show .nav-link, #myTabWherIWorked.nav-tabs .nav-link{
+ border: none;
+}
+#myTabWherIWorked.nav-tabs .nav-item .nav-link:hover{
+    color: #64ffda;
+    font-weight: bold;
+}
+#myTabWherIWorked.nav-tabs .nav-item.show .nav-link, #myTabWherIWorked.nav-tabs .nav-link.active {
+    color: #64ffda;
+    background-color: transparent !important; 
+    border-top-color: transparent  !important;
+    border-right-color: transparent  !important;
+    border-bottom-color: transparent  !important;
+    border-radius: 0;
+    border-left: 2px solid #64ffda;
+}
+#myTabWherIWorked{
+    width: fit-content;
+}
+
+.contact-div{
+    margin-top: 150px;
+    margin-bottom: 100px;
+
+}
+
+.projects-div{
+    margin-top: 200px;
+}
+
+.noteworthy-project-header a svg{
+    font-size: 25px;
+    color: #64FFDA;
+}
+
+.noteworthy-project-item{
+    background-color: #112240 !important;
+}
+
+.languages-and-tech{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
 }
