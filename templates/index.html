@@ -62,23 +62,24 @@
 
 
                 {% include 'parts/project.html' %}
-                
+
 
                 {% include 'parts/contact.html' %}
 
 
 
                 <footer class="text-center">
-                    <a href="https://github.com/anaclet922" class="bottom-copyright">
-                       Built by Anaclet Ahishakiye
+                    <a href="https://github.com/anaclet922" class="bottom-copyright" target="_blank">
+                        Built by Anaclet Ahishakiye
                         <br />
-                        <i class="fas fa-star"></i> 4 &nbsp;&nbsp;&nbsp;<i class="fas fa-code-branch"></i> 6
+                        <i class="fas fa-star"></i> 5 &nbsp;&nbsp;&nbsp;<i class="fas fa-code-branch"></i> 6
                     </a>
                     <br />
                     <br />
                     <p style="font-size: 12px;">
-                        This design is inspired by <a href="https://github.com/bchiang7/v4" target="_blank" style="color: #64FFDA;text-decoration: none;">Brittany
-                        Chiang</a>'s open source designs.
+                        This design is inspired by <a href="https://github.com/bchiang7/v4" target="_blank"
+                            style="color: #64FFDA;text-decoration: none;">Brittany
+                            Chiang</a>'s open source designs.
                     </p>
                 </footer>
             </div>
@@ -99,5 +100,28 @@
     </div>
 
 </body>
+
+<script>
+    // handle links with @href started with '#' only
+    $(document).on('click', 'a[href^="#"]', function (e) {
+        // target element id
+        var id = $(this).attr('href');
+
+        // target element
+        var $id = $(id);
+        if ($id.length === 0) {
+            return;
+        }
+
+        // prevent standard hash navigation (avoid blinking in IE)
+        e.preventDefault();
+
+        // top position relative to the document
+        var pos = $id.offset().top;
+
+        // animated top scrolling
+        $('body, html').animate({ scrollTop: pos });
+    });
+</script>
 
 </html>
