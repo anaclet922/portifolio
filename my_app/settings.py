@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-a3jm5pgp)gktj9vrpugbao(^xhspbs!b+6l1)7t2i4k*w)^05&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['anaclet.online', 'www.anaclet.online']
 
 
 # Application definition
