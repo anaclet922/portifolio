@@ -1,2 +1,5 @@
-# build_files.sh
-python3.11 manage.py collectstatic
+#!/bin/bash
+set -e
+
+# Run Django collectstatic
+python3 manage.py collectstatic --noinput
